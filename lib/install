@@ -1,0 +1,9 @@
+
+___x_cmd_dk_install() {
+    param:dsl <<A
+options:
+    #1        "Environment Candidates" <candidates>:candidates_list
+    #2        "Version"                <version>    =~ "[0-9]+\.[0-9]+\.[0-9]+"
+A
+    param:run
+}

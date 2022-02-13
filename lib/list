@@ -1,0 +1,14 @@
+
+___x_cmd_dk_list() {
+    param:dsl <<A
+options:
+    #1        "Environment Candidates"   <candidates>:candidates_list
+    --update  "Update Environment list"
+A
+
+    if [ -n "$update" ]; then
+        ___x_cmd_dk_update "$@"
+    fi
+
+}
+
